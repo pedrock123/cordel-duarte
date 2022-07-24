@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+/*
+    font-family: 'Passion One', cursive;
+    font-family: 'Sriracha', cursive;      
+*/
+
+
+
+
+:root{
+    --fontcordel: 'Sriracha', cursive;
+    --fonth1: 'Passion One', cursive;
+    --fontpadrao: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    background: 100vw;
+}
