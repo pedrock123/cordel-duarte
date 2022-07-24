@@ -4,15 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
-/*
-    
-    font-family: 'Sriracha', cursive;      
-*/
-
 :root{
-    --fontcordel: 'Passion One', cursive;
+    --fontcordel: 'Sriracha', cursive;
     --fonth1: 'Passion one' , cursive;
-    --fontpadrao: Arial, Helvetica, sans-serif;
+    --fontpadrao:  Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -36,7 +31,7 @@ header h1{
     font-variant: small-caps;
     font-weight: normal;
     font-family: var(--fonth1);
-    font-size: 8vw;
+    font-size: 9vw;
 }
 
 header p{
@@ -46,5 +41,76 @@ header p{
 header a, footer a{
     text-decoration: none;
     color: white;
+}
 
+header a:hover,
+footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-size: 2em;
+    padding-left: 30px;
+    padding-bottom: 10vh;
+    padding-top: 10vh ;
+    font-family: var(--fontcordel);
+    padding: 10px;
+}
+
+section p{
+ 
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 3.3vw;
+    line-height: 2em;
+}
+
+section.normal{
+    color: black;
+    background-color: white;
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section.imagem{
+    background-color: gray;
+    color: white;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.336);
+    
+}
+
+section.imagem p{    
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.356);
+    text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.274);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: var(--fontpadrao);
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 750px){
+    header h1{
+        font-size: 12vw;
+    }
+
+    section p{
+        font-size: 4.5vw;
+    }
 }
