@@ -1,28 +1,50 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 /*
-    font-family: 'Passion One', cursive;
+    
     font-family: 'Sriracha', cursive;      
 */
 
-
-
-
 :root{
-    --fontcordel: 'Sriracha', cursive;
-    --fonth1: 'Passion One', cursive;
+    --fontcordel: 'Passion One', cursive;
+    --fonth1: 'Passion one' , cursive;
     --fontpadrao: Arial, Helvetica, sans-serif;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 html, body{
-    background: 100vw;
+    min-height: 100vw;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+header h1{
+    font-variant: small-caps;
+    font-weight: normal;
+    font-family: var(--fonth1);
+    font-size: 8vw;
+}
+
+header p{
+    font-family: var(--fontpadrao);
+}
+
+header a, footer a{
+    text-decoration: none;
+    color: white;
+
 }
